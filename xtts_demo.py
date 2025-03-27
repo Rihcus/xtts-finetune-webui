@@ -306,7 +306,7 @@ if __name__ == "__main__":
                         
                         # Detect compute type 
                         if torch.cuda.is_available():
-                            compute_type = "float16"
+                            compute_type = "float32" #was origionally float16
                         else:
                             compute_type = "float32"
                         
